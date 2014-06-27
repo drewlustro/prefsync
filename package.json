@@ -1,0 +1,49 @@
+{
+  "name": "prefsync",
+  "description": "Manages syncing OS X preference files between common developer applications.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/Maxrelax/prefsync",
+  "author": {
+    "name": "Drew Lustro",
+    "url": "https://github.com/drewlustro"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Maxrelax/prefsync.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Maxrelax/prefsync/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/Maxrelax/prefsync/blob/master/LICENSE-MIT"
+    }
+  ],
+  "keywords": [
+    "cli",
+    "command line"
+  ],
+  "preferGlobal": true,
+  "bin": {
+    "prefsync": "./bin/prefsync"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.8"
+  },
+  "scripts": {
+    "test": "mocha -R test"
+  },
+  "dependencies": {
+    "minimist": "~0.0.8",
+    "verbalize": "~0.1.1"
+  },
+  "devDependencies": {
+    "bluebird": "^2.1.3",
+    "mkdirp": "^0.5.0",
+    "q": "^1.0.1",
+    "underscore": "^1.6.0",
+    "verb": "~0.2.0"
+  }
+}
