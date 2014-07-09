@@ -1,23 +1,23 @@
 {
   "name": "prefsync",
-  "description": "Manages syncing OS X preference files between common developer applications.",
-  "version": "0.1.0",
-  "homepage": "https://github.com/Maxrelax/prefsync",
+  "description": "Backup + sync common developer plist preferences on OS X between machines.",
+  "version": "0.2.0",
+  "homepage": "https://github.com/maxrelax/prefsync",
   "author": {
     "name": "Drew Lustro",
-    "url": "https://github.com/drewlustro"
+    "url": "https://github.com/maxrelax"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Maxrelax/prefsync.git"
+    "url": "git://github.com/maxrelax/prefsync.git"
   },
   "bugs": {
-    "url": "https://github.com/Maxrelax/prefsync/issues"
+    "url": "https://github.com/maxrelax/prefsync/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/Maxrelax/prefsync/blob/master/LICENSE-MIT"
+      "url": "https://github.com/maxrelax/prefsync/blob/master/LICENSE-MIT"
     }
   ],
   "keywords": [
@@ -25,10 +25,8 @@
     "command line"
   ],
   "preferGlobal": true,
-  "bin": {
-    "prefsync": "./bin/prefsync"
-  },
-  "main": "index.js",
+  "bin": "./app.js",
+  "main": "app.js",
   "engines": {
     "node": ">=0.8"
   },
@@ -36,14 +34,18 @@
     "test": "mocha -R test"
   },
   "dependencies": {
-    "minimist": "~0.0.8",
+    "mkdirp": "^0.5.0",
+    "nconf": "^0.6.9",
     "verbalize": "~0.1.1"
   },
   "devDependencies": {
-    "bluebird": "^2.1.3",
+    "bluebird": "^2.2.1",
+    "colors": "^0.6.2",
     "mkdirp": "^0.5.0",
-    "q": "^1.0.1",
+    "nconf": "^0.6.9",
+    "nowplaying": "^1.0.5",
+    "request": "^2.36.0",
     "underscore": "^1.6.0",
-    "verb": "~0.2.0"
+    "verbalize": "^0.1.2"
   }
 }
